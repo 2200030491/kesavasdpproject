@@ -13,19 +13,19 @@ public class WebConfig implements WebMvcConfigurer
     public void addCorsMappings(CorsRegistry registry) 
     {
     	registry.addMapping("/citizen/**") // Allow CORS 
-                .allowedOrigins("http://localhost:3000")
+                .allowedOrigins("https://sdp-08-jfsd.vercel.app")
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
                 .allowedHeaders("*")
                 .allowCredentials(true);
     	
     	registry.addMapping("/politician/**") // Allow CORS 
-        .allowedOrigins("http://localhost:3000")
+        .allowedOrigins("https://sdp-08-jfsd.vercel.app")
         .allowedMethods("GET", "POST", "PUT", "DELETE")
         .allowedHeaders("*")
         .allowCredentials(true);
     	
     	registry.addMapping("/admin/**") // Allow CORS 
-        .allowedOrigins("http://localhost:3000")
+        .allowedOrigins("https://sdp-08-jfsd.vercel.app")
         .allowedMethods("GET", "POST", "PUT", "DELETE")
         .allowedHeaders("*")
         .allowCredentials(true);
